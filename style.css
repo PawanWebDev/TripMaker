@@ -1,0 +1,170 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+::selection{
+	background: none;
+	text-shadow: 0 0 0.3rem white;
+	box-shadow: 0 0 0.3rem white;
+}
+
+.header{
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-image: url('https://images.unsplash.com/photo-1599499332864-356ea4ffe0fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+}
+
+.navbar{
+	height: 14%;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	padding-top: 0.2rem;
+}
+
+.navhead{
+	font-size: 2rem;
+}
+
+.navbtn{
+	color: white;
+	text-decoration: none;
+	transition: 0.2s color linear;
+}
+
+.navbtn:hover{
+	mix-blend-mode: difference;
+	color: initial;
+}
+
+.others{
+	height: 86%;
+	width: 100%;
+	padding-left: 4rem;
+	padding-right: 2rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+}
+
+.mrt{
+	margin: 0.5rem;
+}
+
+.planbtn{
+	border: none;
+	background: #2E00FF;
+	padding: 1rem;
+	margin-top: 0.5rem;
+	width: 12%;
+	color: white;
+	font-size: 1rem;
+	position: relative;
+	overflow: hidden;
+	transition: 0.2s background linear;
+	outline: none;
+	cursor: pointer;
+}
+
+@media(max-width: 1165px){
+	.planbtn{
+		width: 17%;
+	}
+}
+
+@media(max-width: 737px){
+	.planbtn{
+		width: 19%;
+	}
+}
+
+@media(max-width: 597px){
+	.planbtn{
+		width: 20%;
+	}
+}
+
+@media(max-width: 500px){
+	.planbtn{
+		width: 27%;
+	}
+}
+
+@media(max-width: 380px){
+	.planbtn{
+		width: 45%;
+	}
+}
+
+.planbtn::before{
+	content: '';
+	position: absolute;
+	border: 1px solid white;
+	width: 4%;
+	height: 120%;
+	background: white;
+	left: -20%;
+	top: -10%;
+	transform: rotate(20deg);
+	transition: 0.7s left linear;
+}
+
+.planbtn:hover.planbtn::before{
+	left: 120%;
+}
+
+.planbtn:hover{
+	background: black;
+}
+
+.btns{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+	height: 100%;
+}
+
+.menu{
+	display: none;
+	outline: none;
+}
+
+
+@media(max-width: 998px){
+	html{
+		font-size: 65%;
+	}
+}
+
+@media(max-width: 500px){
+	.menu{
+		display: flex;
+	}
+
+	.btns{
+		font-size: 64.5%;
+		flex-direction: column;
+		background: white;
+		display: none;
+		width: auto;
+		height: 100%;
+		justify-content: center;
+		padding: 0rem 1rem;
+	}
+
+	.navbtn{
+		color: black;
+		margin-top: 0.55rem;
+		padding: 0.1rem 0.5rem;
+		width: 100%;
+		text-align: center;
+	}
+}

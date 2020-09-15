@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TripMaker</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<nav class="navbar">
+				<h1 class="navhead">TripMaker</h1>
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+					width="26" height="26"
+					viewBox="0 0 226 226"
+				style=" fill:#000000;" class="menu" onclick="show()" onblur="hide()"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,226v-226h226v226z" fill="none"></path><g fill="#ffffff"><path d="M0,34.76923v17.38462h226v-17.38462zM0,104.30769v17.38462h226v-17.38462zM0,173.84615v17.38462h226v-17.38462z"></path></g></g></svg>
+				<ul class="btns">
+					<a class="navbtn" href="">Home</a>
+					<a class="navbtn" href="">Trip</a>
+					<a class="navbtn" href="">Places</a>
+					<a class="navbtn" href="">Availability</a>
+					<a class="navbtn" href="">Vacation</a>
+				</ul>
+				
+			</nav>
+			<div class="others">
+				<h1 class="navhead">Plan Your Trip or Vacation with Us</h1>
+				<p class="mrt">Get Your vacations Ready in Few Minutes</p>
+				<button class="planbtn">Plan Your Trip</button>
+			</div>
+		</header>
+		<script>
+			
+			var allbtns = document.getElementsByClassName('btns')[0];
+			function show() {
+
+				if (allbtns.style.display == 'flex'){
+					allbtns.style.display = 'none';
+				} else{
+					allbtns.style.display = 'flex';
+				}
+
+			}
+
+			function hide() {
+					allbtns.style.display = 'none';
+			}
+
+
+		</script>
+	</body>
+</html>
